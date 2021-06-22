@@ -150,8 +150,8 @@ def on_open(ws):
 def exchange(path):
     # 测试时候在此处正确填写相关信息即可运行
     global wsParam
-    wsParam = Ws_Param(APPID='377a3a9e', APISecret='ZGU2OTdkZDRhMDk0OGYxZjA3ZTAwYTgy',
-                   APIKey='c2f6fee3523b823598982f1c890c1d99',
+    wsParam = Ws_Param(APPID='#', APISecret='#',
+                   APIKey='#',
                    AudioFile=path)
     websocket.enableTrace(False)
     wsUrl = wsParam.create_url()
