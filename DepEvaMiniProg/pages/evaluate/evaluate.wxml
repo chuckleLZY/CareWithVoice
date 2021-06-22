@@ -1,0 +1,41 @@
+<!--pages/evaluate/evaluate.wxml-->
+<navBar title='CareWithVoice' background='#fff' back="{{false}}"></navBar>
+<view class="container">
+  <view class="tips">
+    Assessment
+    <view class="decoration"></view>
+  </view>
+
+  <view class="block">
+    <view class="hint {{hintClass}}">
+      <view class="icon-sugg">
+        <view class="iconfont icon-suggestion"></view>
+      </view>
+      <text>{{depSuggestion}}</text>
+    </view>
+
+    <view class="suggestion">
+      <van-dialog title="{{title}}" showConfirmButton="{{false}}" use-slot show="{{ show }}" closeOnClickOverlay>
+        <view class="suggestion-text"><text>{{suggestion}}</text></view>
+        <view class="confirm-butt" bindtap="onOkClick">Ok</view>
+      </van-dialog>
+      <view bindtap="onSuggestionClick"
+        data-suggestion=" In an effective counseling relationship, you have the opportunity to re-experience past inhibited feelings and become aware of behaviors and thought patterns brought on by subconscious conflicts."
+        data-title="Counseling" class="iconfont icon-counsel inst"></view>
+      <view bindtap="onSuggestionClick"
+        data-suggestion=" Relaxation exercises, including meditation and positive thinking, help to relieve depressive moods. \n It is a combination of breathing, meditation and body movement exercises that are helpful in alleviating emotions and increasing the awareness of the present moment."
+        data-title="Relaxation Training" class="iconfont icon-relax inst"></view>
+      <view bindtap="onSuggestionClick"
+        data-suggestion=" Exercise requires a person's full attention and unity of mind and body. \n Exercise (such as rock climbing and aerobics) allows people to detach from negative emotions."
+        data-title="Physical Exercises" class="iconfont icon-sport inst"></view>
+    </view>
+
+    <van-circle value="{{ score/80*100 }}" stroke-width="8" size="220" color="{{circleColor}}" layer-color="#eeeeee">
+      <view class="score-display">
+        <view class="score {{scoreClass}}">
+          {{score}}<view class="up-limit">/80</view>
+        </view>
+      </view>
+    </van-circle>
+  </view>
+</view>

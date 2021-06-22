@@ -1,0 +1,29 @@
+<!--pages/cover/cover.wxml-->
+<navBar title='CareWithVoice' background='#fff' back="{{false}}"></navBar>
+<view class="container">
+  <view class="intro">
+    <view class="intro-title">CareWithVoice</view>
+    <view class="decoration"></view>
+  </view>
+
+  <view class="block">
+    <image src="/images/icon.svg" class="main-icon"></image>
+    <view class="block-title">CareWithVoice</view>
+    <view class="introduction">
+      CareWithVoice is a program for depression severity self-assessment.
+      <text>\n</text>
+      Before assessment, you have to answer 3 questions asked by the
+      interviewer.
+      <text>\n</text>
+      Click Start to begin the interview.
+    </view>
+    <view class="block-butt">
+      <view class="block-butt-content" bindtap="onInstClick">Instruction</view>
+    </view>
+  </view>
+
+  <button bindtap="onStartClick" class="next-button {{nextStyle}}" disabled="{{disagree}}">Start</button>
+  <view class="copyright">
+    Copyright © School of Software, Tongji University
+  </view>
+</view>

@@ -1,0 +1,115 @@
+/* pages/cover/cover.wxss */
+.container {
+  background: rgb(233, 241, 241);
+  height: 100vh;
+  width: 100vw;
+  color: rgba(34, 52, 52, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.intro {
+  font-size: 60rpx;
+  margin-bottom: 60rpx;
+  margin-top: 40rpx;
+  font-weight: bolder;
+}
+
+.decoration {
+  height: 6rpx;
+  background: rgba(229, 52, 127, 0.8);
+  width: 200rpx;
+  margin: auto;
+  margin-top: 10rpx;
+}
+
+.intro-title {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.intro-title span {
+  font-weight: 400;
+}
+
+.block {
+  background: #fff;
+  border-radius: 15rpx;
+  height: 50%;
+  width: 85%;
+  padding: 40rpx 45rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30rpx;
+  font-size: 24rpx;
+  font-weight: 300;
+  text-align: center;
+}
+
+.block::-webkit-scrollbar {
+  width: 0;
+}
+
+.block-title {
+  font-size: 42rpx;
+  color: rgba(34, 52, 52, 0.8);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20rpx;
+  font-weight: 500;
+}
+
+.block-butt {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718096;
+  font-weight: 400;
+}
+
+.block-butt-content {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.block-butt span {
+  height: 18rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  font-weight: 800;
+}
+
+.next-button {
+  width: 300rpx;
+  height: 80rpx;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgb(82, 212, 209),
+    rgb(74, 192, 189)
+  );
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 18rpx;
+  position: absolute;
+  bottom: 20rpx;
+}
+
+.main-icon {
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 20rpx;
+}

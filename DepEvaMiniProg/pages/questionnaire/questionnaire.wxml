@@ -1,0 +1,33 @@
+<!--pages/questionnaire/questionnaire.wxml-->
+<navBar title='CareWithVoice' background='#fff' back="{{true}}" bindback="goback"></navBar>
+<view class="container">
+  <view class="intro">
+    Self Depression Scale
+    <view class="decoration" />
+  </view>
+  <view class="tips">
+    <text>There are 20 items below. Please read each item carefully.
+      Choose the options based on your feelings in the last two weeks.</text>
+  </view>
+  <view wx:for="{{descItems}}" class="section" wx:key="*this" wx:for-index="key" wx:for-item="descItem" id="{{key}}"
+    bindtap="bindDescChange">
+    <view class="title">{{descItem.desc}}</view>
+    <radio-group class="radio-group" bindchange="bindRadioChange">
+      <radio class="radio" wx:for-items="{{optionItems[descItem.value]}}" wx:key="index" value="{{item.value}}"
+        checked="{{item.checked}}" color="rgba(229,52,127,0.8)" id="{{index}}">
+        <text>{{item.name}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  <view class="operation">
+    <button class="op-button" bindtap="onOpButtClick">
+      <view class="iconfont icon-done" />
+    </button>
+  </view>
+  <view hidden="{{flag}}" class="float">
+    <view class="iconfont icon-arrow" />
+    <text>点击右上角退出小程序</text>
+    <text></text>
+  </view>
+  <view class="copyright">Copyright © 同济大学软件学院</view>
+</view>

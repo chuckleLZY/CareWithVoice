@@ -1,0 +1,171 @@
+/* pages/evaluate/evaluate.wxss */
+@import "../../icons/suggestion.wxss";
+@import "../../icons/psycho.wxss";
+
+.container {
+  background: rgb(233, 241, 241);
+  height: 100%;
+  width: 100%;
+  color: rgba(34, 52, 52, 0.8);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tips {
+  /* position: absolute; */
+  /* top: 20rpx; */
+  text-align: center;
+  font-size: 60rpx;
+  font-weight: bolder;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+.decoration {
+  height: 6rpx;
+  background: rgba(229, 52, 127, 0.8);
+  width: 200rpx;
+  margin: auto;
+  margin-top: 10rpx;
+}
+
+.block {
+  background: #fff;
+  border-radius: 15rpx;
+  height: 750rpx;
+  width: 550rpx;
+  border: 45rpx solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.block::-webkit-scrollbar {
+  width: 0;
+}
+
+.hint {
+  line-height: 30rpx;
+  font-size: 20rpx;
+  font-weight: 300;
+}
+
+.hint-depressed {
+  color: rgb(229, 52, 127);
+}
+
+.hint-nondepressed {
+  color: rgb(34, 52, 52);
+}
+
+.hint text {
+  margin-left: 20rpx;
+}
+
+.score-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  height: 280rpx;
+  width: 280rpx;
+  border-radius: 50%;
+  text-align: center;
+  /* box-shadow: 30rpx 30rpx 50rpx rgba(154, 190, 195, 0.13); */
+  color: #fff;
+  font-size: 80rpx;
+  line-height: 280rpx;
+}
+
+.score-nondepressed {
+  background-image: linear-gradient(to right, #38b2ac, #319795);
+}
+
+.score-depressed {
+  background-image: linear-gradient(to right, #ED64A6, #B83280);
+}
+
+.up-limit {
+  font-size: 24rpx;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.copyright {
+  font-size: 14rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.instruction-butt {
+  margin-right: 10rpx;
+}
+
+.support-tips {
+  margin: 20rpx 120rpx;
+  font-weight: 400;
+  color: rgb(132, 162, 167);
+  font-size: 22rpx;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.support-tips span {
+  line-height: 20rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  font-weight: 800;
+}
+
+.icon-sugg {
+  display: inline-block;
+  font-size: 20rpx !important;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50rpx auto;
+}
+
+.suggestion .inst {
+  margin-right: 100rpx;
+}
+
+.suggestion .inst:last-child {
+  margin-right: 0;
+}
+
+.suggestion-text {
+  font-size: 24rpx;
+  color: rgba(34, 52, 52, 0.8);
+  padding: 40rpx;
+}
+
+.confirm-butt {
+  width: 300rpx;
+  height: 80rpx;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgb(82, 212, 209),
+    rgb(74, 192, 189)
+  );
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx auto;
+}

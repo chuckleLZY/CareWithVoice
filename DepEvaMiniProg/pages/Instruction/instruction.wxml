@@ -1,0 +1,24 @@
+<!--pages/Instruction/instruction.wxml-->
+<navBar title='CareWithVoice' background='#fff' back="{{true}}" bindback="goback"></navBar>
+<view class="container">
+  <view class="intro">
+    <view class="intro-title">Instruction</view>
+    <view class="decoration"></view>
+  </view>
+
+  <view class="block">
+    <view class="step-wrapper">
+      <view wx:for="{{steps}}" wx:key="*this" class="step-card">
+        <view class="step-icon">
+          <image src="{{item.icon}}"></image>
+        </view>
+        <view class="step-content">
+          <view class="step-title">{{item.title}}</view>
+          <view class="step-desc">{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class="next-button" bindtap="goback">Return</button>
+</view>

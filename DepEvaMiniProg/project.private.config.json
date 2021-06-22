@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/cover/cover",
+          "pathName": "pages/cover/cover",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Instruction/instruction",
+          "pathName": "pages/Instruction/instruction",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/recording/recording",
+          "pathName": "pages/recording/recording",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionnaire/questionnaire",
+          "pathName": "pages/questionnaire/questionnaire",
+          "query": "positive=pos&negative=neg&depscore=32&neutral=neu",
+          "scene": null
+        },
+        {
+          "name": "pages/evaluate/evaluate",
+          "pathName": "pages/evaluate/evaluate",
+          "query": "score=31",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

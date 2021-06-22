@@ -1,0 +1,234 @@
+/* pages/recording/recording.wxss */
+@import "../../icons/start.wxss";
+@import "../../icons/stop.wxss";
+@import "../../icons/next.wxss";
+@import "../../icons/restart.wxss";
+@import "../../icons/done.wxss";
+@import "../../icons/help.wxss";
+@import "../../icons/replay.wxss";
+@import "../../icons/play-stop.wxss";
+@import "../../icons/refresh.wxss";
+
+.container {
+  background: rgb(233, 241, 241);
+  height: 100%;
+  width: 100%;
+  color: rgba(34, 52, 52, 0.8);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tips {
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 46rpx;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+
+.decoration {
+  height: 6rpx;
+  background: rgba(229, 52, 127, 0.8);
+  width: 200rpx;
+  margin: auto;
+  margin-top: 10rpx;
+}
+
+.hint {
+  font-size: 22rpx;
+  color: rgba(34, 52, 52, 0.3);
+  line-height: 30rpx;
+  width: 650rpx;
+  margin-top: 10px;
+}
+
+.question-box {
+  text-align: center;
+  line-height: 45rpx;
+}
+
+.question-box-stop {
+  position: absolute;
+  top: 300rpx;
+}
+
+.question-stop {
+  font-weight: 400;
+  color: rgb(132, 162, 167);
+  margin: 40rpx 50rpx 25rpx;
+  text-align: center;
+}
+
+.question {
+  background: #fff;
+  color: rgb(202, 88, 166);
+  width: 650rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 30rpx 30rpx 50rpx rgba(154, 190, 195, 0.13);
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.question .text {
+  padding: 40rpx;
+  border-radius: 15rpx;
+}
+
+.index {
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+  font-weight: 300;
+  color: rgb(132, 162, 167);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 25rpx solid #fff;
+  border-left: 25rpx solid transparent;
+  border-right: 25rpx solid transparent;
+}
+
+.operation {
+  margin-top: 20rpx;
+}
+
+.op-button {
+  width: 135rpx;
+  height: 135rpx;
+  border-radius: 50%;
+  color: rgb(233, 241, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.op-restart {
+  width: 100rpx;
+  height: 100rpx;
+  background: rgb(233, 241, 241);
+  color: #0da5a5;
+  border: 5rpx solid #0da5a5;
+  margin-right: 20rpx;
+}
+
+.op-replay {
+  width: 100rpx;
+  height: 100rpx;
+  background: rgb(233, 241, 241);
+  color: #0da5a5;
+  border: 5rpx solid #0da5a5;
+}
+
+.icon-replay {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 20rpx solid #0da5a5;
+  border-top: 20rpx solid transparent;
+  border-bottom: 20rpx solid transparent;
+}
+
+.re-operation {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.op-next {
+  width: 265rpx;
+  padding: 10rpx;
+  background-image: linear-gradient(to right, rgb(82, 212, 209), rgb(74, 192, 189));
+  color: #fff;
+  border-radius: 50rpx;
+  font-size: 0.9rem;
+  margin-top: 40rpx;
+  font-weight: bolder;
+}
+
+.start {
+  background-image: linear-gradient(to right, rgb(73, 192, 190), #0da5a5);
+}
+
+.stop {
+  background-image: linear-gradient(to right, rgb(206, 78, 79), rgb(183, 28, 28));
+}
+
+.done {
+  background-image: linear-gradient(to right, rgb(240, 98, 146), rgb(216, 27, 96));
+}
+
+.next {
+  background-image: linear-gradient(to right, rgb(73, 192, 190), #0da5a5);
+  font-size: 100px;
+}
+
+.timer {
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  font-weight: 300;
+}
+
+.timer-stop {
+  color: rgb(132, 162, 167);
+  font-size: 36rpx;
+  font-weight: 300;
+}
+
+.timer-not-start {
+  color: rgb(167, 185, 189);
+}
+
+.timer-started {
+  color: rgba(34, 52, 52, 0.8);
+}
+
+.help view {
+  display: inline;
+  vertical-align: middle;
+}
+
+.index view {
+  display: inline;
+  vertical-align: middle;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20rpx;
+  margin: 10rpx;
+  font-size: 18rpx;
+}
+
+.shizuku {
+  max-width: 400rpx;
+}
+
+.animat-audio {  
+	/* background: #fff;   */
+  display: inline-block;
+}
+.other .animat-audio {  
+	border-radius: 0 16rpx 16rpx 16rpx;
+}
+.img {  
+	width:36rpx;  
+	height:36rpx;
+	z-index:99999;
+}
+
+.playing-img {
+  height: 32rpx;
+  width: 27rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}

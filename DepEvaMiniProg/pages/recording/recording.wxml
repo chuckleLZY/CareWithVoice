@@ -1,0 +1,46 @@
+<!--pages/recording/recording.wxml-->
+<navBar title='CareWithVoice' background='#fff' back="{{true}}" bindback="goback"></navBar>
+<view class="container">
+  <view class="tips">
+    <view class="help">Interview
+      <view bindtap="onHelpClick" class="iconfont icon-help " />
+    </view>
+    <view class="decoration"></view>
+    <view class="hint"> Please answer each question according to your real
+      experience. The recording should not exceed two minutes. Please keep the recording environment quiet.</view>
+  </view>
+  <view class="question-box">
+    <view hidden="{{flag!=1}}" class="index">The {{questionIndexDict[curBoxIndex]}} Question
+      <view bindtap="onRefreshClick" class="iconfont icon-refresh " />
+    </view>
+    <view class="{{flag!=1 ? 'question-stop' : 'question' }}">
+      <view class="text">{{questions[curBoxIndex][curQuesIndex]}}
+        <view class='animat-audio' bindtap="playShizikuAudio">
+          <image class="playing-img" src="{{shizukuSpeaking ? '../../images/audioPlaying.gif' : '../../images/3.png'}}"></image>
+        </view>
+      </view>
+    </view>
+    <view hidden="{{flag!=1}}" class="arrow" />
+  </view>
+  <image class="shizuku" src="{{shizukuState}}" onload="onShizukuLoad"></image>
+  <!-- <view hidden="{{flag==1}}" class="recording-animation">
+    <view wx:for="{{blocksArray}}" wx:key="{{index}}" class="block delay{{item%10}} {{flag==0?'pause':''}}" />
+  </view> -->
+  <view class="re-operation">
+    <button hidden="{{flag!=0}}" class="op-button op-restart" bindtap="onRestartClick">
+      <view class="iconfont icon-restart" />
+    </button>
+    <button hidden="{{flag!=0}}" class="op-button op-replay" bindtap="onReplayClick">
+      <view hidden="{{!replaying}}" class="iconfont icon-play-stop" />
+      <view hidden="{{replaying}}" class="icon-replay" />
+    </button>
+  </view>
+  <view class="timer {{timerClass}}">{{timeDisplay}}</view>
+  <view class="operation">
+    <button hidden="{{curBoxIndex==2&&flag==0}}" class="op-button {{opButtClass}}" bindtap="onOpButtClick">
+      <view class="iconfont {{opIconFont}}" />
+    </button>
+    <button hidden="{{!(curBoxIndex==2&&flag==0)}}" bindtap="onOpButtClick" class="op-next">Next</button>
+  </view>
+  <view class="copyright">Copyright © 同济大学软件学院</view>
+</view>

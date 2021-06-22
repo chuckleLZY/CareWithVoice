@@ -1,0 +1,119 @@
+/* pages/questionnaire/questionnaire.wxss */
+@import "../../icons/done.wxss";
+@import "../../icons/arrow.wxss";
+
+.container {
+  background: rgb(233, 241, 241);
+  height: 100%;
+  width: 100%;
+  color: rgba(34, 52, 52, 0.8);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+
+.intro {
+  font-size: 48rpx;
+  margin-bottom: 20rpx;
+  margin-top: 40rpx;
+  font-weight: bolder;
+}
+
+.decoration {
+  height: 6rpx;
+  background: rgba(229, 52, 127, 0.8);
+  width: 200rpx;
+  margin: auto;
+  margin-top: 10rpx;
+}
+
+.tips {
+  margin: 10rpx;
+  text-align: left;
+  font-weight: 400;
+  color: rgb(132, 162, 167);
+  font-size: 22rpx;
+  text-align: center;
+}
+
+.section {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx 0;
+  width: 85%;
+  margin: 20rpx auto;
+  box-shadow: 30rpx 30rpx 50rpx rgba(154, 190, 195, 0.18);
+}
+
+.title {
+  border-bottom: 5rpx solid rgba(233, 241, 241, 0.5);
+  padding-bottom: 15rpx;
+  padding-left: 30rpx;
+  margin: 0 30rpx;
+  font-weight: 500;
+  font-size: 32rpx;
+}
+
+.radio-group {
+  margin-top: 20rpx;
+}
+
+.radio {
+  display: block;
+  font-size: 34rpx;
+  transform: scale(0.75, 0.75);
+  font-weight: 400;
+}
+
+.radio text {
+  margin-left: 20rpx;
+}
+
+.operation {
+  margin: 20rpx auto 50rpx;
+}
+
+.op-button {
+  background-image: linear-gradient(to right, rgb(240, 98, 146), rgb(216, 27, 96));
+  width: 135rpx;
+  height: 135rpx;
+  border-radius: 50%;
+  color: rgb(233, 241, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.float {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 35rpx;
+}
+
+.float view {
+  position: fixed;
+  right: 25rpx;
+  top: 20rpx;
+}
+
+.float text {
+  position: fixed;
+  top: 140rpx;
+  right: 25rpx;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 30rpx;
+  font-size: 18rpx;
+}

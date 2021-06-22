@@ -1,0 +1,8 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "miniprograms-navigation-bar": "^2.0.2"
+  }
+}

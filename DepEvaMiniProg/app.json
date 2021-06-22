@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/Instruction/instruction",
+    "pages/recording/recording",
+    "pages/questionnaire/questionnaire",
+    "pages/evaluate/evaluate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "navBar": "miniprograms-navigation-bar"
+  }
+}
